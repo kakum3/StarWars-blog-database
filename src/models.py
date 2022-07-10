@@ -10,8 +10,8 @@ Base = declarative_base()
 
 class Usuarios(Base):
     __tablename__ = 'Usuarios'
-    # Here we define columns for the table person
-    # Notice that each column is also a normal Python instance attribute.
+ 
+   .
     ID = Column(Integer, primary_key=True)
     name = Column(String(250))
     LastName = Column(String(250))
@@ -43,5 +43,5 @@ class FavPlanet(Base):
     def to_dict(self):
         return {}
 
-## Draw from SQLAlchemy base
+
 render_er(Base, 'diagram.png')
